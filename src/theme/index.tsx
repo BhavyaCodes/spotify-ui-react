@@ -10,4 +10,7 @@ export const darkThemeOptions: ThemeOptions = {
       contrastText: "rgba(0, 0, 0, 0.87)",
     },
   },
+  typography: {
+    fontFamily: `"Circular Std Book", "Helvetica", "Arial", sans-serif`,
+  },
 };
