@@ -9,10 +9,15 @@ export function Artist({ name, image }: ArtistProp) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        borderRadius: 1,
       }}
     >
       <Box p={2}>
-        <img src={image} alt={name} style={{ borderRadius: 500 }} />
+        <img
+          src={image}
+          alt={name}
+          style={{ borderRadius: 500, width: "100%" }}
+        />
       </Box>
       <Box p={2} sx={{ alignSelf: "flex-start" }}>
         <Typography sx={{ fontSize: 14 }}>{name}</Typography>
