@@ -2,3 +2,4 @@
 - [ ] Add profile menu on top nav
 - [ ] make back and forward buttons work
 - [ ] fix layout shift with play button
+- [ ] center player
