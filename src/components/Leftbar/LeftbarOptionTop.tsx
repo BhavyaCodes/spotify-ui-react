@@ -17,7 +17,7 @@ interface LeftbarOptionProps {
   path: Paths;
 }
 
-export function LeftbarOption({
+export function LeftbarOptionTop({
   icon,
   text,
   viewBox,

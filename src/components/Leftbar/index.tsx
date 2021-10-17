@@ -1,31 +1,52 @@
-import { LeftbarOption } from "./LeftbarOption";
+import { LeftbarOptionTop } from "./LeftbarOptionTop";
+
 import { ReactComponent as home } from "assets/icons/home.svg";
 import { ReactComponent as library } from "assets/icons/library.svg";
 import { ReactComponent as search } from "assets/icons/search.svg";
+import { ReactComponent as plus } from "assets/icons/plus.svg";
+import { ReactComponent as heart } from "assets/icons/heart.svg";
+import { LeftbarOptionBottom } from "./LeftbarOptionBottom";
 
 export default function index() {
   return (
     <div>
-      <LeftbarOption
+      <LeftbarOptionTop
         icon={home}
         text="Home"
         viewBox="0 0 15 16"
         top={2}
         path="/"
       />
-      <LeftbarOption
+      <LeftbarOptionTop
         icon={search}
         text="Search"
         viewBox="0 0 15 16"
         top={2}
         path="/search"
       />
-      <LeftbarOption
+      <LeftbarOptionTop
         icon={library}
         text="Your Library"
         viewBox="0 0 15 16"
         top={2}
         path="/library"
+      />
+
+      <LeftbarOptionBottom
+        icon={plus}
+        text="Create Playlist"
+        viewBox="0 0 8 8"
+        top={2}
+        background="#B2B2B2"
+        sx={{ mt: 4 }}
+      />
+      <LeftbarOptionBottom
+        icon={heart}
+        text="Create Playlist"
+        viewBox="0 0 8 7"
+        top={2}
+        background="linear-gradient(135deg, #2D1CA3 0%, #899C99 100%)"
+        sx={{ mt: 2 }}
       />
     </div>
   );
