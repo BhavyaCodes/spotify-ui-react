@@ -1,5 +1,19 @@
-import { Box } from "@mui/material";
+// import { Box, SvgIcon, Typography } from "@mui/material";
 
-export default function Artist() {
-  return <Box>Artist Page</Box>;
+import { ArtistHeader } from "components/ArtistPage/ArtistHeader";
+
+interface AppProps {
+  artistInfo: ArtistInfoType;
+}
+
+export type ArtistInfoType = {
+  name: string;
+  listeners: number;
+  verified: boolean;
+  image: string;
+};
+
+export default function Artist({ artistInfo }: AppProps) {
+  const { name, image, listeners, verified } = artistInfo;
+  return <ArtistHeader artistInfo={artistInfo} />;
 }

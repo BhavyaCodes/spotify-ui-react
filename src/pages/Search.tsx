@@ -64,7 +64,12 @@ const topGenres: GenreType[] = [
 
 export default function Search() {
   return (
-    <Box>
+    <Box
+      sx={{
+        backgroundColor: "#191414",
+        p: 3,
+      }}
+    >
       <Typography variant="h4" sx={{ mt: 4, mb: 2 }}>
         Recent searches
       </Typography>

@@ -102,11 +102,12 @@ export default function Layout({ children }: { children: ReactNode }) {
         component="main"
         sx={{
           flexGrow: 0,
-          p: 3,
+          p: 0,
+          // p: 3,
           width: { sm: `calc(100% - ${2 * drawerWidth}px)` },
           // width: { sm: `calc(100% - ${drawerWidth}px)` },
           pb: "3rem",
-          backgroundColor: "#191414",
+          // backgroundColor: "#191414",
           // overflowX: "auto",
           // height: "auto",
           maxHeight: "100vh",
@@ -115,7 +116,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         }}
       >
         <TopNav />
-        <Box height={40} />
+        {/* <Box height={40} /> */}
         {/* <button onClick={handleDrawerToggle}>Open drawer</button> */}
 
         {children}

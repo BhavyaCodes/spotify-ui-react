@@ -13,7 +13,8 @@ export function TopNav() {
         mt: -1.5,
         backgroundColor: "rgba(0,0,0,0)",
         position: "absolute",
-        width: "97%",
+        width: "100%",
+        p: 3,
       }}
     >
       <Box
