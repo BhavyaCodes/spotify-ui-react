@@ -3,6 +3,7 @@ import { darkThemeOptions } from "theme";
 import { CssBaseline } from "@mui/material";
 import Layout from "components/Layout";
 import Pages from "pages";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   const theme = createTheme(darkThemeOptions);
@@ -10,9 +11,11 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Layout>
-        <Pages />
-      </Layout>
+      <BrowserRouter>
+        <Layout>
+          <Pages />
+        </Layout>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
