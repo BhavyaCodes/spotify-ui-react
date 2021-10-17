@@ -1,6 +1,7 @@
 import * as React from "react";
 import { styled, alpha, Box } from "@mui/system";
 import SliderUnstyled from "@mui/core/SliderUnstyled";
+import { Typography } from "@mui/material";
 
 const StyledSlider = styled(SliderUnstyled)(
   ({ theme }) => `
@@ -67,8 +68,14 @@ const StyledSlider = styled(SliderUnstyled)(
 
 export function ProgressBar() {
   return (
-    <Box sx={{ width: 300 }}>
+    <Box sx={{ width: 600 }} display="flex">
+      <Typography sx={{ position: "relative", top: 2.5, mr: 2 }}>
+        1:43
+      </Typography>
       <StyledSlider defaultValue={10} />
+      <Typography sx={{ position: "relative", top: 2.5, ml: 2 }}>
+        4:00
+      </Typography>
     </Box>
   );
 }
