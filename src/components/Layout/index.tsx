@@ -47,6 +47,26 @@ export default function Layout({ children }: { children: ReactNode }) {
           <Leftbar />
         </Drawer>
         <Drawer
+          container={container}
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true, // Better open performance on mobile.
+          }}
+          anchor="right"
+          sx={{
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
+          }}
+        >
+          {/* {drawer} */}
+          <Leftbar />
+        </Drawer>
+        <Drawer
           variant="permanent"
           sx={{
             display: { xs: "none", sm: "block" },
@@ -60,15 +80,36 @@ export default function Layout({ children }: { children: ReactNode }) {
           <Leftbar />
           {/* {drawer} */}
         </Drawer>
+        <Drawer
+          // anchor="right"
+          variant="permanent"
+          sx={{
+            display: { xs: "none", sm: "block" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
+          }}
+          open
+          anchor="right"
+        >
+          <Leftbar />
+          {/* {drawer} */}
+        </Drawer>
       </Box>
       <Box
         component="main"
         sx={{
-          flexGrow: 1,
+          flexGrow: 0,
           p: 3,
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
+          width: { sm: `calc(100% - ${2 * drawerWidth}px)` },
+          // width: { sm: `calc(100% - ${drawerWidth}px)` },
           pb: "3rem",
           backgroundColor: "#191414",
+          // overflowX: "auto",
+          // height: "auto",
+          maxHeight: "100vh",
+          overflowY: "scroll",
         }}
       >
         <TopNav />
