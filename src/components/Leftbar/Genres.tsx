@@ -131,7 +131,15 @@ const genres = [
 
 export function Genres() {
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", pl: 2.5, pt: 2 }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        pl: 2.5,
+        pt: 2,
+        paddingBottom: "3.5rem",
+      }}
+    >
       {genres.map((str) => (
         <Box sx={{ color: "text.secondary", fontSize: 14 }}>{`${str},`}</Box>
       ))}
