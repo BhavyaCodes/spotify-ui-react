@@ -1,8 +1,5 @@
 import { SvgIcon, Typography } from "@mui/material";
 import { Box } from "@mui/material";
-import { useLocation } from "react-router-dom";
-import { Paths } from "types";
-import { Link } from "react-router-dom";
 import { SxProps } from "@mui/system";
 
 interface LeftbarOptionProps {
