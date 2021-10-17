@@ -111,9 +111,11 @@ export default function Layout({ children }: { children: ReactNode }) {
           // height: "auto",
           maxHeight: "100vh",
           overflowY: "scroll",
+          position: "relative",
         }}
       >
         <TopNav />
+        <Box height={40} />
         {/* <button onClick={handleDrawerToggle}>Open drawer</button> */}
 
         {children}
