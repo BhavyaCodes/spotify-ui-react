@@ -1,3 +1,5 @@
+import { Box } from "@mui/material";
+
 const genres = [
   "Blues",
   "Classic Rock",
@@ -128,5 +130,11 @@ const genres = [
 ];
 
 export function Genres() {
-  return <div></div>;
+  return (
+    <Box sx={{ display: "flex", flexDirection: "column", pl: 2.5, pt: 2 }}>
+      {genres.map((str) => (
+        <Box sx={{ color: "text.secondary", fontSize: 14 }}>{`${str},`}</Box>
+      ))}
+    </Box>
+  );
 }

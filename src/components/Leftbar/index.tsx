@@ -7,6 +7,7 @@ import { ReactComponent as plus } from "assets/icons/plus.svg";
 import { ReactComponent as heart } from "assets/icons/heart.svg";
 import { LeftbarOptionBottom } from "./LeftbarOptionBottom";
 import { Box } from "@mui/material";
+import { Genres } from "./Genres";
 
 export default function index() {
   return (
@@ -59,6 +60,7 @@ export default function index() {
           marginTop: 3,
         }}
       />
+      <Genres />
     </div>
   );
 }
