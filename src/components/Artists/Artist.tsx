@@ -1,7 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import { Artist as ArtistProp } from "pages/Search";
+import { useHistory } from "react-router";
 
 export function Artist({ name, image }: ArtistProp) {
+  const history = useHistory();
   return (
     <Box
       sx={{
@@ -10,7 +12,9 @@ export function Artist({ name, image }: ArtistProp) {
         flexDirection: "column",
         alignItems: "center",
         borderRadius: 1,
+        cursor: "pointer",
       }}
+      onClick={() => history.push("/artist")}
     >
       <Box p={2}>
         <img
