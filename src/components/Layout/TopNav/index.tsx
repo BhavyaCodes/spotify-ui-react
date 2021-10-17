@@ -1,6 +1,7 @@
 import { Box, SvgIcon } from "@mui/material";
 import { ReactComponent as leftArrow } from "assets/icons/left-arrow.svg";
 import { ReactComponent as rightArrow } from "assets/icons/right-arrow.svg";
+import { SearchBar } from "./SearchBar";
 
 export function TopNav() {
   return (
@@ -45,6 +46,10 @@ export function TopNav() {
           fontSize="inherit"
           sx={{ position: "relative", left: 1 }}
         />
+      </Box>
+      <SearchBar sx={{ ml: 3 }} />
+      <Box sx={{ marginLeft: "auto" }}>
+        <button>asasd</button>
       </Box>
     </Box>
   );
