@@ -8,9 +8,29 @@ export type GenreType = {
 
 export function Genre({ name, image, bgColor }: GenreType) {
   return (
-    <Box sx={{ backgroundColor: bgColor }}>
-      <Typography>{name}</Typography>
-      <img src={image} alt={name} />
+    <Box
+      sx={{
+        backgroundColor: bgColor,
+        borderRadius: 1,
+        p: 1,
+        height: 200,
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
+      <Typography variant="h4">{name}</Typography>
+      <img
+        src={image}
+        style={{
+          width: "20%",
+          position: "absolute",
+          bottom: 0,
+          right: 0,
+          // transform: "rotate(0.05turn) translate(13%, 10%)",
+          transform: "rotateZ(30deg) translate(20%, -10%)",
+        }}
+        alt={name}
+      />
     </Box>
   );
 }
