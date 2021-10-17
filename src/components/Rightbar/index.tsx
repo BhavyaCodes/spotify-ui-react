@@ -6,7 +6,7 @@ import arlene from "assets/friends/arlene.png";
 import bessie from "assets/friends/bessie.png";
 import brooklyn from "assets/friends/brooklyn.png";
 import cody from "assets/friends/cody.png";
-import darell from "assets/friends/darell.png";
+import darrell from "assets/friends/darrell.png";
 import floyd from "assets/friends/floyd.png";
 import jane from "assets/friends/jane.png";
 import kathryn from "assets/friends/kathryn.png";
@@ -50,52 +50,92 @@ const friends: FriendType[] = [
     image: theresa,
   },
   {
-    name: "Jane Cooper",
-    title: "When You Die",
-    artist: "Shawn Mendes",
+    name: "Floyd Miles",
+    title: "Mine",
+    artist: "Lauv",
     type: "music",
     time: "now",
-    image: jane,
+    image: floyd,
   },
   {
-    name: "Jane Cooper",
-    title: "When You Die",
-    artist: "Shawn Mendes",
-    type: "music",
+    name: "Arlene McCoy",
+    title: "Lucky Girl",
+    artist: "Lady Gaga",
+    type: "podcast",
     time: "now",
-    image: jane,
+    image: arlene,
   },
   {
-    name: "Jane Cooper",
-    title: "When You Die",
-    artist: "Shawn Mendes",
+    name: "Ralph Edwards",
+    title: "Lemon Tree",
+    artist: "Sech",
     type: "music",
-    time: "now",
-    image: jane,
+    time: "1 hr",
+    image: ralph,
   },
   {
-    name: "Jane Cooper",
-    title: "When You Die",
-    artist: "Shawn Mendes",
+    name: "Albert Flores",
+    title: "Lover Boy",
+    artist: "Marshmello",
     type: "music",
-    time: "now",
-    image: jane,
+    time: "4 hr",
+    image: albert,
   },
   {
-    name: "Jane Cooper",
-    title: "When You Die",
-    artist: "Shawn Mendes",
+    name: "Wade Warren",
+    title: "Baby One More Time",
+    artist: "The Chainsmokers",
     type: "music",
-    time: "now",
-    image: jane,
+    time: "4 hr",
+    image: wade,
   },
   {
-    name: "Jane Cooper",
-    title: "When You Die",
-    artist: "Shawn Mendes",
+    name: "Robert Fox",
+    title: "Show Me How",
+    artist: "Daddy Yankee",
     type: "music",
-    time: "now",
-    image: jane,
+    time: "1 d",
+    image: robert,
+  },
+  {
+    name: "Kathryn Murphy",
+    title: "You & Me",
+    artist: "J Balvin",
+    type: "music",
+    time: "2 d",
+    image: kathryn,
+  },
+  {
+    name: "Kristin Watson",
+    title: "Wonderful Tonight",
+    artist: "Ed Sheeran",
+    type: "music",
+    time: "2 d",
+    image: kristin,
+  },
+  {
+    name: "Darrell Steward",
+    title: "Some Feeling",
+    artist: "Ed Sheeran",
+    type: "music",
+    time: "2 d",
+    image: darrell,
+  },
+  {
+    name: "Annette Black",
+    title: "It's My Life",
+    artist: "Lil Nax X",
+    type: "music",
+    time: "2 d",
+    image: annette,
+  },
+  {
+    name: "Brooklyn Simmer",
+    title: "Bad Ideas",
+    artist: "MEDUZA",
+    type: "music",
+    time: "2 d",
+    image: brooklyn,
   },
 ];
 
@@ -105,7 +145,7 @@ export default function Rightbar() {
   }
   return (
     <Box p={1.5} sx={{ minHeight: "100vh", overflowY: "scroll" }}>
-      <Typography sx={{ fontSize: 14, fontWeight: 900 }}>
+      <Typography sx={{ fontSize: 20, fontWeight: 900 }}>
         Friends Activity
       </Typography>
       {renderFriends()}

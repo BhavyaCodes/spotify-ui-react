@@ -21,7 +21,14 @@ export function Friend({ name, title, artist, type, time, image }: AppProps) {
         {time === "now" ? (
           <SvgIcon component={PlayingNow} viewBox="0 0 6 10" />
         ) : (
-          <p>{time}</p>
+          <Typography
+            sx={{
+              // fontWeight: 100,
+              color: (theme) => theme.palette.text.secondary,
+            }}
+          >
+            {time}
+          </Typography>
         )}
       </Box>
       <img
