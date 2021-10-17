@@ -6,6 +6,7 @@ import { ReactComponent as search } from "assets/icons/search.svg";
 import { ReactComponent as plus } from "assets/icons/plus.svg";
 import { ReactComponent as heart } from "assets/icons/heart.svg";
 import { LeftbarOptionBottom } from "./LeftbarOptionBottom";
+import { Box } from "@mui/material";
 
 export default function index() {
   return (
@@ -47,6 +48,16 @@ export default function index() {
         top={2}
         background="linear-gradient(135deg, #2D1CA3 0%, #899C99 100%)"
         sx={{ mt: 2 }}
+      />
+      <Box
+        sx={{
+          height: "1px",
+          backgroundColor: "#B2B2B2",
+          width: "90%",
+          margin: "auto",
+          opacity: "20%",
+          marginTop: 3,
+        }}
       />
     </div>
   );
