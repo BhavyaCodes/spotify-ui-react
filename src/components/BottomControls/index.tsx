@@ -1,6 +1,8 @@
 import { Box, Paper } from "@mui/material";
 
 import { Left } from "./Left";
+import { Right } from "./Right";
+import { Middle } from "./Middle";
 export default function BottomControls() {
   return (
     <Paper
@@ -13,8 +15,16 @@ export default function BottomControls() {
         // height: "3rem",
       }}
     >
-      <Box sx={{ display: "flex" }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
         <Left />
+        <Middle />
+        <Right />
       </Box>
     </Paper>
   );
