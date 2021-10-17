@@ -22,11 +22,10 @@ export function Genre({ name, image, bgColor }: GenreType) {
       <img
         src={image}
         style={{
-          width: "20%",
+          width: "120px",
           position: "absolute",
           bottom: 0,
           right: 0,
-          // transform: "rotate(0.05turn) translate(13%, 10%)",
           transform: "rotateZ(30deg) translate(20%, -10%)",
         }}
         alt={name}
