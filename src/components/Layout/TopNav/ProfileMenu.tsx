@@ -17,11 +17,6 @@ export function ProfileMenu() {
         },
       }}
     >
-      {/* <img
-        src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
-        alt="avatar"
-        height="100%"
-      /> */}
       <Avatar
         alt="Cindy Baker"
         src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
