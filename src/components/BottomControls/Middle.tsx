@@ -5,6 +5,7 @@ import { ReactComponent as Play } from "assets/icons/play.svg";
 import { ReactComponent as Previous } from "assets/icons/previous.svg";
 import { ReactComponent as Repeat } from "assets/icons/repeat.svg";
 import { useState } from "react";
+import { ProgressBar } from "./ProgressBar";
 
 export function Middle() {
   const [shuffle, setShuffle] = useState<boolean>(false);
@@ -92,6 +93,7 @@ export function Middle() {
           viewBox="0 0 14 12"
         />
       </Box>
+      <ProgressBar />
     </Box>
   );
 }
