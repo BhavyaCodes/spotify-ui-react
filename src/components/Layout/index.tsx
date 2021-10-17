@@ -72,7 +72,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         }}
       >
         <TopNav />
-        <button onClick={handleDrawerToggle}>Open drawer</button>
+        {/* <button onClick={handleDrawerToggle}>Open drawer</button> */}
 
         {children}
       </Box>

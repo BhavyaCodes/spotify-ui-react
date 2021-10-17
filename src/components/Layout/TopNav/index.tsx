@@ -6,7 +6,7 @@ import { SearchBar } from "./SearchBar";
 
 export function TopNav() {
   return (
-    <Box sx={{ display: "flex", alignItems: "center" }}>
+    <Box sx={{ display: "flex", alignItems: "center", mt: -1.5 }}>
       <Box
         sx={{
           backgroundColor: "#0A0808",

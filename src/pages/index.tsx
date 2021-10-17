@@ -1,5 +1,6 @@
 import { Switch, Route } from "react-router-dom";
 import { Home } from "./Home";
+import Search from "./Search";
 
 export default function index() {
   return (
@@ -8,7 +9,7 @@ export default function index() {
         <Home />
       </Route>
       <Route path="/search" exact>
-        <h1>search</h1>
+        <Search />
       </Route>
       <Route path="/library" exact>
         <h1>library</h1>
