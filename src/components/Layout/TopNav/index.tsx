@@ -1,11 +1,12 @@
 import { Box, SvgIcon } from "@mui/material";
 import { ReactComponent as leftArrow } from "assets/icons/left-arrow.svg";
 import { ReactComponent as rightArrow } from "assets/icons/right-arrow.svg";
+import { ProfileMenu } from "./ProfileMenu";
 import { SearchBar } from "./SearchBar";
 
 export function TopNav() {
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", alignItems: "center" }}>
       <Box
         sx={{
           backgroundColor: "#0A0808",
@@ -49,7 +50,7 @@ export function TopNav() {
       </Box>
       <SearchBar sx={{ ml: 3 }} />
       <Box sx={{ marginLeft: "auto" }}>
-        <button>asasd</button>
+        <ProfileMenu />
       </Box>
     </Box>
   );
