@@ -6,7 +6,9 @@ export type GenreType = {
   bgColor: string;
 };
 
-export function Genre({ name, image, bgColor }: GenreType) {
+interface AppProps extends GenreType {}
+
+export function Genre({ name, image, bgColor }: AppProps) {
   return (
     <Box
       sx={{

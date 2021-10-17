@@ -5,8 +5,9 @@ import { ReactNode, useState } from "react";
 import Leftbar from "components/Leftbar";
 import { TopNav } from "./TopNav";
 import BottomControls from "components/BottomControls";
+import Rightbar from "components/Rightbar";
 
-const drawerWidth = 176;
+const drawerWidth = 240;
 
 export default function Layout({ children }: { children: ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -64,7 +65,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           }}
         >
           {/* {drawer} */}
-          <Leftbar />
+          <Rightbar />
         </Drawer>
         <Drawer
           variant="permanent"
@@ -93,7 +94,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           open
           anchor="right"
         >
-          <Leftbar />
+          <Rightbar />
           {/* {drawer} */}
         </Drawer>
       </Box>
