@@ -1,12 +1,10 @@
-import { Paper } from "@mui/material";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Drawer from "@mui/material/Drawer";
-
-import Typography from "@mui/material/Typography";
 import { ReactNode, useState } from "react";
 import Leftbar from "components/Leftbar";
 import { TopNav } from "./TopNav";
+import BottomControls from "components/BottomControls";
 
 const drawerWidth = 176;
 
@@ -78,18 +76,8 @@ export default function Layout({ children }: { children: ReactNode }) {
 
         {children}
       </Box>
-      <Paper
-        sx={{
-          position: "fixed",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          zIndex: 10000,
-          height: "3rem",
-        }}
-      >
-        <Typography>bottom bar</Typography>
-      </Paper>
+
+      <BottomControls />
     </Box>
   );
 }
