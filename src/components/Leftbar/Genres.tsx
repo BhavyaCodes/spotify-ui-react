@@ -143,7 +143,15 @@ export function Genres() {
       {genres.map((str) => (
         <Box
           key={str}
-          sx={{ color: "text.secondary", fontSize: 14 }}
+          sx={{
+            color: "text.secondary",
+            fontSize: 14,
+            cursor: "default",
+            transition: "all .2s ease-out",
+            "&:hover": {
+              color: "#fff",
+            },
+          }}
         >{`${str},`}</Box>
       ))}
     </Box>

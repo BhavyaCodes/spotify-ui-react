@@ -31,6 +31,7 @@ export function NavLink({
       alignItems="center"
       onClick={() => history.push(path)}
       sx={{
+        transition: "all .2s ease-out",
         "&:hover": {
           color: "#fff",
         },
