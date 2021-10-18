@@ -14,7 +14,13 @@ export function TopNav() {
         backgroundColor: "rgba(0,0,0,0)",
         position: "absolute",
         width: "100%",
-        p: 3,
+        px: {
+          xs: 1,
+          sm: 1.5,
+          md: 2,
+        },
+        pt: 2.5,
+        // p: (theme) => (theme.breakpoints.down("sm") ? 10 : 1),
       }}
     >
       <Box
@@ -23,7 +29,10 @@ export function TopNav() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          p: 1.5,
+          p: {
+            xs: 1,
+            sm: 1.5,
+          },
           borderRadius: "50%",
           fontSize: 15,
           fontWeight: 900,
@@ -44,7 +53,10 @@ export function TopNav() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          p: 1.5,
+          p: {
+            xs: 1,
+            sm: 1.5,
+          },
           borderRadius: "50%",
           fontSize: 15,
           fontWeight: 900,
@@ -58,7 +70,7 @@ export function TopNav() {
           sx={{ position: "relative", left: 1 }}
         />
       </Box>
-      <SearchBar sx={{ ml: 3 }} />
+      <SearchBar sx={{ ml: { xs: 1, sm: 1.5, md: 3 } }} />
       <Box sx={{ marginLeft: "auto" }}>
         <ProfileMenu />
       </Box>

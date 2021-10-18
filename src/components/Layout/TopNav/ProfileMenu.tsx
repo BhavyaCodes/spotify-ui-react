@@ -22,7 +22,14 @@ export function ProfileMenu() {
         src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
         sx={{ height: 22, width: 22, ml: 0.5 }}
       />
-      <Typography sx={{ fontSize: 12, pl: 1, fontWeight: 700 }}>
+      <Typography
+        sx={{
+          fontSize: 12,
+          pl: 1,
+          fontWeight: 700,
+          display: { xs: "none", sm: "inherit" },
+        }}
+      >
         Cody Fisher
       </Typography>
       <SvgIcon
