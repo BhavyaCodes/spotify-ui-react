@@ -20,7 +20,12 @@ export function Genre({ name, image, bgColor }: AppProps) {
         overflow: "hidden",
       }}
     >
-      <Typography variant="h4">{name}</Typography>
+      <Typography
+        sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", lg: "2rem" } }}
+        variant="h4"
+      >
+        {name}
+      </Typography>
       <img
         src={image}
         style={{
