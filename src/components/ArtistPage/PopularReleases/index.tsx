@@ -8,7 +8,7 @@ interface AppProps {
 export default function PopularReleases({ releases }: AppProps) {
   function renderReleases() {
     return releases.map((release) => (
-      <Grid item lg={2}>
+      <Grid item lg={2} md={3} sm={4} xs={6}>
         <Title {...release} />
       </Grid>
     ));
