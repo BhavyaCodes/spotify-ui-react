@@ -3,10 +3,13 @@ import { ReactComponent as PlayIcon } from "assets/icons/play-icon-white.svg";
 
 import { ArtistHeader } from "components/ArtistPage/ArtistHeader";
 import { ArtistPopularSongs } from "components/ArtistPage/ArtistPopularSongs";
+import PopularReleases from "components/ArtistPage/PopularReleases";
+import { PopularReleaseType } from "components/ArtistPage/PopularReleases/Title";
 
 interface AppProps {
   artistInfo: ArtistInfoType;
   popularSongs: ArtistPopularSongType[];
+  popularReleases: PopularReleaseType[];
 }
 
 export type ArtistInfoType = {
@@ -23,7 +26,11 @@ export type ArtistPopularSongType = {
   length: string;
 };
 
-export default function Artist({ artistInfo, popularSongs }: AppProps) {
+export default function Artist({
+  artistInfo,
+  popularSongs,
+  popularReleases,
+}: AppProps) {
   // const { name, image, listeners, verified } = artistInfo;
   return (
     <>
@@ -58,6 +65,7 @@ export default function Artist({ artistInfo, popularSongs }: AppProps) {
           </Button>
         </Box>
         <ArtistPopularSongs popularSongs={popularSongs} />
+        <PopularReleases releases={popularReleases} />
       </Box>
     </>
   );
