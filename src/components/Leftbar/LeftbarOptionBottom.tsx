@@ -10,9 +10,6 @@ interface LeftbarOptionProps {
   >;
   text: string;
   viewBox: string;
-  top?: number;
-  left?: number;
-  // path: Paths;
   background: string;
   sx?: SxProps;
 }
@@ -21,9 +18,6 @@ export function LeftbarOptionBottom({
   icon,
   text,
   viewBox,
-  top,
-  left,
-  // path,
   background,
   sx,
 }: LeftbarOptionProps) {
@@ -36,7 +30,6 @@ export function LeftbarOptionBottom({
         cursor: "pointer",
         color: "rgb(179, 179, 179)",
         fill: "rgb(179, 179, 179)",
-
         ":hover": {
           "& > * ": {
             color: "white !important",
@@ -49,7 +42,7 @@ export function LeftbarOptionBottom({
       {/* <Link to={path} style={{ textDecoration: "none", color: "inherit" }}> */}
       <Box
         sx={{
-          m: 1,
+          // m: 1,
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
@@ -59,20 +52,36 @@ export function LeftbarOptionBottom({
           transition: "all .2s ease-out",
         }}
       >
-        <Box ml={1.5} mr={1.5} pr={0.9} px={0.6} py={0.2} sx={{ background }}>
+        {/* <Box ml={1.5} mr={1.5} pr={0.9} px={0.6} py={0.2} sx={{ background }}> */}
+        <Box
+          // pr={1}
+          // pl={13 / 8}
+          ml={1.5}
+          my={0.5}
+          mr={1}
+          sx={{
+            fontSize: 8,
+            background,
+            width: 16,
+            height: 16,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: 0.25,
+          }}
+        >
           <SvgIcon
             fontSize="inherit"
             component={icon}
             viewBox={viewBox}
-            sx={{ position: "relative", top }}
+            sx={{ position: "relative" }}
             fill="inherit"
           />
         </Box>
         <Typography
           sx={{
-            fontSize: "14px",
+            fontSize: 12,
             fontWeight: 700,
-            // color: isActive ? "white" : "inherit",
             color: "inherit",
             textDecoration: "none",
             "&:link": {

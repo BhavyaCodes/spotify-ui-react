@@ -5,7 +5,8 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {

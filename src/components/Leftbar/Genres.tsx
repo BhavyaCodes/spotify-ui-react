@@ -135,8 +135,8 @@ export function Genres() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        pl: 2.5,
-        pt: 2,
+        ml: 1.5,
+        mt: 1.5,
         paddingBottom: "3.5rem",
       }}
     >
@@ -145,12 +145,15 @@ export function Genres() {
           key={str}
           sx={{
             color: "text.secondary",
-            fontSize: 14,
+            fontSize: 12,
+            lineHeight: "14px",
             cursor: "default",
             transition: "all .2s ease-out",
             "&:hover": {
               color: "#fff",
             },
+            height: 14,
+            mb: 0.75,
           }}
         >{`${str},`}</Box>
       ))}

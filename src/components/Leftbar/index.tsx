@@ -48,26 +48,24 @@ export default function LeftBar() {
         icon={plus}
         text="Create Playlist"
         viewBox="0 0 8 8"
-        top={2}
         background="#B2B2B2"
-        sx={{ mt: 4 }}
+        sx={{ mt: 2 }}
       />
       <LeftbarOptionBottom
         icon={heart}
         text="Create Playlist"
         viewBox="0 0 8 7"
-        top={2}
         background="linear-gradient(135deg, #2D1CA3 0%, #899C99 100%)"
-        sx={{ mt: 2 }}
+        // sx={{ mt: 2 }}
       />
       <Box
         sx={{
           height: "1px",
           backgroundColor: "#B2B2B2",
-          width: "90%",
+          width: "100%",
           margin: "auto",
-          opacity: "20%",
-          marginTop: 3,
+          opacity: 0.2,
+          marginTop: 2,
         }}
       />
       <Genres />
