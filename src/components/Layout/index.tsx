@@ -10,7 +10,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material";
 import BottomNav from "components/BottomNav";
 
-const drawerWidth = 240;
+const drawerWidth = 176;
 
 export default function Layout({ children }: { children: ReactNode }) {
   const theme = useTheme();
@@ -31,6 +31,9 @@ export default function Layout({ children }: { children: ReactNode }) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: matches ? 0 : drawerWidth,
+            },
+            "& div": {
+              border: "none",
             },
           }}
           open

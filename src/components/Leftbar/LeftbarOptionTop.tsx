@@ -46,34 +46,37 @@ export function LeftbarOptionTop({
       <Link to={path} style={{ textDecoration: "none", color: "inherit" }}>
         <Box
           sx={{
-            m: 1,
+            my: 0.5,
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
             backgroundColor: isActive ? "#282828" : "inherit",
-            borderRadius: 0.5,
+            borderRadius: 1,
             transition: "all .2s ease-out",
+            height: 24,
           }}
         >
-          <Box pr={1.5} pl={20 / 8} py={1}>
+          <Box pr={1} pl={13 / 8} my={0.5} sx={{ fontSize: 16 }}>
             <SvgIcon
               fontSize="inherit"
+              // fontSize={16}
               component={icon}
               viewBox={viewBox}
               sx={{ position: "relative", top }}
               fill="inherit"
+              height="60%"
             />
           </Box>
           <Typography
             sx={{
-              fontSize: "14px",
+              fontSize: 12,
               // fontWeight: isActive ? 900 : 700,
               fontWeight: 700,
               color: isActive ? "white" : "inherit",
               textDecoration: "none",
               "&:link": {
                 textDecoration: "none",
-                color: "pink",
+                // color: "pink",
               },
             }}
           >
