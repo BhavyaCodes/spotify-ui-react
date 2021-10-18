@@ -12,7 +12,7 @@ export default function Artists({ artists }: { artists: IArtist[] }) {
   }
 
   return (
-    <Grid container spacing={5}>
+    <Grid container spacing={4}>
       {renderArtists()}
     </Grid>
   );
