@@ -1,5 +1,7 @@
 ::-webkit-scrollbar {
+  /* width: 4px; */
   width: 4px;
+  position: "absolute";
 }
 
 ::-webkit-scrollbar-track {
