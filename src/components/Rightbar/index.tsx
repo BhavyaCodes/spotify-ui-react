@@ -141,7 +141,7 @@ const friends: FriendType[] = [
 
 export default function Rightbar() {
   function renderFriends() {
-    return friends.map((friend) => <Friend {...friend} />);
+    return friends.map((friend) => <Friend key={friend.name} {...friend} />);
   }
   return (
     <Box p={1.5} sx={{ minHeight: "100vh", overflowY: "scroll" }}>

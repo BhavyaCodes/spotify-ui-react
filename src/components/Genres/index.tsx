@@ -9,7 +9,7 @@ interface AppProps {
 export default function Genres({ genres, gridSize }: AppProps) {
   function renderGenres() {
     return genres.map((genre) => (
-      <Grid item lg={gridSize}>
+      <Grid key={genre.name} item lg={gridSize}>
         <Genre {...genre} />
       </Grid>
     ));

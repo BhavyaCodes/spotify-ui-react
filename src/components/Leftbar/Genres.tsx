@@ -141,7 +141,10 @@ export function Genres() {
       }}
     >
       {genres.map((str) => (
-        <Box sx={{ color: "text.secondary", fontSize: 14 }}>{`${str},`}</Box>
+        <Box
+          key={str}
+          sx={{ color: "text.secondary", fontSize: 14 }}
+        >{`${str},`}</Box>
       ))}
     </Box>
   );

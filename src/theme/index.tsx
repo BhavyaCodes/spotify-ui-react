@@ -9,6 +9,12 @@ export const darkThemeOptions: ThemeOptions = {
       dark: "rgb(20, 129, 58)",
       contrastText: "rgba(0, 0, 0, 0.87)",
     },
+    secondary: {
+      main: "#fff",
+      light: "#fff",
+      dark: "#fff",
+      contrastText: "rgba(0, 0, 0, 0.87)",
+    },
     grey: {
       600: "#B2B2B2",
     },

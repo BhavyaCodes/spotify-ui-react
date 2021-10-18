@@ -5,7 +5,7 @@ import { Artist } from "./Artist";
 export default function Artists({ artists }: { artists: IArtist[] }) {
   function renderArtists() {
     return artists.map((artist) => (
-      <Grid item lg={2}>
+      <Grid key={artist.name} item lg={2}>
         <Artist {...artist} />
       </Grid>
     ));
