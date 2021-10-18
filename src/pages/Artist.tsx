@@ -31,7 +31,6 @@ export default function Artist({
   popularSongs,
   popularReleases,
 }: AppProps) {
-  // const { name, image, listeners, verified } = artistInfo;
   return (
     <>
       <ArtistHeader artistInfo={artistInfo} />

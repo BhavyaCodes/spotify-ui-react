@@ -1,5 +1,11 @@
 import { ArtistInfoType } from "pages/Artist";
-import { Box, SvgIcon, Typography } from "@mui/material";
+import {
+  Box,
+  SvgIcon,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { ReactComponent as Verified } from "assets/icons/verified.svg";
 
 interface AppProps {
@@ -7,6 +13,10 @@ interface AppProps {
 }
 
 export function ArtistHeader({ artistInfo }: AppProps) {
+  const theme = useTheme();
+  // const downXs = useMediaQuery(theme.breakpoints.down("xs"));
+  const downSm = useMediaQuery(theme.breakpoints.down("sm"));
+
   const { name, image, listeners, verified } = artistInfo;
 
   return (
@@ -19,7 +29,11 @@ export function ArtistHeader({ artistInfo }: AppProps) {
         alignItems: "center",
       }}
     >
-      <img src={image} style={{ borderRadius: "500px" }} alt={name} />
+      <img
+        src={image}
+        style={{ borderRadius: "500px", width: downSm ? "150px" : "200px" }}
+        alt={name}
+      />
       <Box pl={3}>
         <Box display="flex">
           {verified && <SvgIcon component={Verified} viewBox="0 0 16 16" />}
@@ -27,7 +41,11 @@ export function ArtistHeader({ artistInfo }: AppProps) {
             {verified && "Verified Artist"}
           </Typography>
         </Box>
-        <Typography variant="h1" fontWeight={900}>
+        <Typography
+          variant="h1"
+          fontSize={downSm ? "4rem" : "6rem"}
+          fontWeight={900}
+        >
           {name}
         </Typography>
         <Typography>{`${listeners.toLocaleString()} monthly listeners`}</Typography>
