@@ -144,7 +144,17 @@ export default function Rightbar() {
     return friends.map((friend) => <Friend key={friend.name} {...friend} />);
   }
   return (
-    <Box p={1.5} sx={{ minHeight: "100vh", overflowY: "scroll" }}>
+    <Box
+      p={1.5}
+      sx={{
+        minHeight: "100vh",
+        overflowY: "scroll",
+        pb: {
+          sm: 150 / 8,
+          lg: 90 / 8,
+        },
+      }}
+    >
       <Typography sx={{ fontSize: 20, fontWeight: 900 }}>
         Friends Activity
       </Typography>

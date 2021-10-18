@@ -11,7 +11,14 @@ import { Genres } from "./Genres";
 
 export default function index() {
   return (
-    <div>
+    <Box
+      sx={{
+        pb: {
+          sm: 150 / 8,
+          lg: 90 / 8,
+        },
+      }}
+    >
       <LeftbarOptionTop
         icon={home}
         text="Home"
@@ -61,6 +68,6 @@ export default function index() {
         }}
       />
       <Genres />
-    </div>
+    </Box>
   );
 }
