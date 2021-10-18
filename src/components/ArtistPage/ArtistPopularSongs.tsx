@@ -33,6 +33,9 @@ export function ArtistPopularSongs({ popularSongs }: AppProps) {
             Popular
           </Typography>
           {renderSongs()}
+          <Typography sx={{ mt: 2 }} fontSize={12} gutterBottom>
+            SEE MORE
+          </Typography>
         </Grid>
         <Grid item lg={4}>
           <Typography fontSize={24} gutterBottom>
