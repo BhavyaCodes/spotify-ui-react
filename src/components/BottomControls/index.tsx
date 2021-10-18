@@ -8,7 +8,11 @@ export default function BottomControls() {
     <Paper
       sx={{
         position: "fixed",
-        bottom: 0,
+        bottom: {
+          xs: 60,
+          md: 60,
+          lg: 0,
+        },
         left: 0,
         right: 0,
         zIndex: 10000,

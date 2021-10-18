@@ -13,7 +13,7 @@ export function Right() {
       sx={{
         display: {
           xs: "none",
-          sm: "flex",
+          md: "flex",
         },
       }}
     >

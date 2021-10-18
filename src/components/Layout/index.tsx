@@ -8,6 +8,7 @@ import BottomControls from "components/BottomControls";
 import Rightbar from "components/Rightbar";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material";
+import BottomNav from "components/BottomNav";
 
 const drawerWidth = 240;
 
@@ -65,10 +66,12 @@ export default function Layout({ children }: { children: ReactNode }) {
         }}
       >
         <TopNav />
+
         {children}
       </Box>
 
       <BottomControls />
+      <BottomNav />
     </Box>
   );
 }
