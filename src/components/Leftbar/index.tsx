@@ -9,7 +9,7 @@ import { LeftbarOptionBottom } from "./LeftbarOptionBottom";
 import { Box } from "@mui/material";
 import { Genres } from "./Genres";
 
-export default function index() {
+export default function LeftBar() {
   return (
     <Box
       sx={{
@@ -17,27 +17,30 @@ export default function index() {
           sm: 150 / 8,
           lg: 90 / 8,
         },
+        px: 1,
+        pt: 2,
+        backgroundColor: "#000000",
       }}
     >
       <LeftbarOptionTop
         icon={home}
         text="Home"
         viewBox="0 0 15 16"
-        top={2}
+        top={2.5}
         path="/"
       />
       <LeftbarOptionTop
         icon={search}
         text="Search"
         viewBox="0 0 15 16"
-        top={2}
+        top={2.5}
         path="/search"
       />
       <LeftbarOptionTop
         icon={library}
         text="Your Library"
-        viewBox="0 0 15 16"
-        top={2}
+        viewBox="0 0 16 16"
+        top={2.5}
         path="/library"
       />
 
@@ -45,26 +48,24 @@ export default function index() {
         icon={plus}
         text="Create Playlist"
         viewBox="0 0 8 8"
-        top={2}
         background="#B2B2B2"
-        sx={{ mt: 4 }}
+        sx={{ mt: 2 }}
       />
       <LeftbarOptionBottom
         icon={heart}
         text="Create Playlist"
         viewBox="0 0 8 7"
-        top={2}
         background="linear-gradient(135deg, #2D1CA3 0%, #899C99 100%)"
-        sx={{ mt: 2 }}
+        // sx={{ mt: 2 }}
       />
       <Box
         sx={{
           height: "1px",
           backgroundColor: "#B2B2B2",
-          width: "90%",
+          width: "100%",
           margin: "auto",
-          opacity: "20%",
-          marginTop: 3,
+          opacity: 0.2,
+          marginTop: 2,
         }}
       />
       <Genres />
