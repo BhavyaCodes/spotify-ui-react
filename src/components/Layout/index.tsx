@@ -6,10 +6,14 @@ import Leftbar from "components/Leftbar";
 import { TopNav } from "./TopNav";
 import BottomControls from "components/BottomControls";
 import Rightbar from "components/Rightbar";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material";
 
 const drawerWidth = 240;
 
 export default function Layout({ children }: { children: ReactNode }) {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -24,11 +28,11 @@ export default function Layout({ children }: { children: ReactNode }) {
 
       <Box
         component="nav"
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+        sx={{ width: { lg: drawerWidth }, flexShrink: { lg: 0 } }}
         aria-label="mailbox folders"
       >
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        <Drawer
+        {/* <Drawer
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -44,10 +48,9 @@ export default function Layout({ children }: { children: ReactNode }) {
             },
           }}
         >
-          {/* {drawer} */}
           <Leftbar />
-        </Drawer>
-        <Drawer
+        </Drawer> */}
+        {/* <Drawer
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -64,28 +67,25 @@ export default function Layout({ children }: { children: ReactNode }) {
             },
           }}
         >
-          {/* {drawer} */}
           <Rightbar />
-        </Drawer>
+        </Drawer> */}
         <Drawer
           variant="permanent"
           sx={{
-            display: { xs: "none", sm: "block" },
+            display: { xs: "none", sm: "none", md: "none", lg: "block" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
-              width: drawerWidth,
+              width: matches ? 0 : drawerWidth,
             },
           }}
           open
         >
           <Leftbar />
-          {/* {drawer} */}
         </Drawer>
         <Drawer
-          // anchor="right"
           variant="permanent"
           sx={{
-            display: { xs: "none", sm: "block" },
+            display: { xs: "none", sm: "none", md: "none", lg: "block" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
@@ -104,7 +104,9 @@ export default function Layout({ children }: { children: ReactNode }) {
           flexGrow: 0,
           p: 0,
           // p: 3,
-          width: { sm: `calc(100% - ${2 * drawerWidth}px)` },
+          // width: { sm: "100%", md: "100%", lg: "100%" },
+
+          width: { xl: `calc(100% - ${2 * drawerWidth}px)` },
           // width: { sm: `calc(100% - ${drawerWidth}px)` },
           pb: "3rem",
           // backgroundColor: "#191414",
@@ -116,8 +118,6 @@ export default function Layout({ children }: { children: ReactNode }) {
         }}
       >
         <TopNav />
-        {/* <Box height={40} /> */}
-        {/* <button onClick={handleDrawerToggle}>Open drawer</button> */}
 
         {children}
       </Box>
