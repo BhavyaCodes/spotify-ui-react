@@ -93,6 +93,7 @@ export function Middle() {
           viewBox="0 0 14 12"
         />
       </Box>
+
       <ProgressBar />
     </Box>
   );
