@@ -23,6 +23,6 @@ export const darkThemeOptions: ThemeOptions = {
     },
   },
   typography: {
-    fontFamily: `"Circular Std Book", "Helvetica", "Arial", sans-serif`,
+    fontFamily: `"Circular Std", "Helvetica", "Arial", sans-serif`,
   },
 };
