@@ -77,11 +77,23 @@ export default function Search() {
       <Typography variant="h4" sx={{ mt: 4, mb: 2 }}>
         Your top genres
       </Typography>
-      <Genres genres={topGenres} gridSize={4} />
+      <Genres
+        genres={topGenres}
+        gridSizelg={4}
+        gridSizemd={4}
+        gridSizesm={6}
+        gridSizexs={6}
+      />
       <Typography variant="h4" sx={{ mt: 4, mb: 2 }}>
         Browse all
       </Typography>
-      <Genres genres={allGenres} gridSize={2} />
+      <Genres
+        genres={allGenres}
+        gridSizelg={2}
+        gridSizemd={4}
+        gridSizesm={6}
+        gridSizexs={6}
+      />
     </Box>
   );
 }
