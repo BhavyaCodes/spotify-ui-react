@@ -24,7 +24,12 @@ export function ProgressBar() {
       </Typography>
       <Slider />
       <Typography
-        sx={{ position: "relative", top: 5, ml: 2, opacity: 0.5 }}
+        sx={{
+          position: "relative",
+          top: 5,
+          ml: 2,
+          opacity: 0.5,
+        }}
         fontSize={14}
       >
         4:00

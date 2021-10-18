@@ -16,6 +16,7 @@ export function Middle() {
       flexDirection="column"
       alignItems="center"
       justifyContent="center"
+      sx={{ mr: 2 }}
     >
       <Box
         display="flex"

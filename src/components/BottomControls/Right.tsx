@@ -7,7 +7,16 @@ import { Slider } from "components/common/Slider";
 
 export function Right() {
   return (
-    <Box p={2} display="flex" alignItems="center">
+    <Box
+      p={2}
+      alignItems="center"
+      sx={{
+        display: {
+          xs: "none",
+          sm: "flex",
+        },
+      }}
+    >
       <SvgIcon
         component={Queue}
         viewBox="0 0 16 16"
