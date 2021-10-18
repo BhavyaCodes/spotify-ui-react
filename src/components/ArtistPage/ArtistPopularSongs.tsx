@@ -15,13 +15,13 @@ export function ArtistPopularSongs({ popularSongs }: AppProps) {
         alignItems="center"
         // justifyContent="space-between"
       >
-        <Box m={2}>{i + 1}</Box>
+        <Box mr={2}>{i + 1}</Box>
         <img height="50px" width="50px" src={song.image} alt={song.title} />
         <Typography sx={{ p: 2, width: "40%" }}>{song.title}</Typography>
         <Typography sx={{ p: 2, width: "20%" }}>
           {song.hits.toLocaleString()}
         </Typography>
-        <Typography sx={{ p: 2, pr: 4, ml: 2 }}>{song.length}</Typography>
+        <Typography sx={{ p: 2, pr: 1, ml: 2 }}>{song.length}</Typography>
       </Box>
     ));
   }
