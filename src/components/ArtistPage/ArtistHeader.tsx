@@ -14,7 +14,6 @@ interface AppProps {
 
 export function ArtistHeader({ artistInfo }: AppProps) {
   const theme = useTheme();
-  // const downXs = useMediaQuery(theme.breakpoints.down("xs"));
   const downSm = useMediaQuery(theme.breakpoints.down("sm"));
 
   const { name, image, listeners, verified } = artistInfo;
