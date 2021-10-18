@@ -56,13 +56,22 @@ export default function Layout({ children }: { children: ReactNode }) {
         component="main"
         sx={{
           flexGrow: 0,
-          p: 0,
+          // p: 0,
           width: { xl: `calc(100% - ${2 * drawerWidth}px)` },
           // width: { sm: `calc(100% - ${drawerWidth}px)` },
-          pb: "3rem",
+          // pb: "3rem",
           maxHeight: "100vh",
           overflowY: "scroll",
           position: "relative",
+          // mb: {
+          //   sm: 150,
+          //   md: 150,
+          //   lg: 60,
+          // },
+          pb: {
+            sm: 150 / 8,
+            lg: 90 / 8,
+          },
         }}
       >
         <TopNav />
