@@ -23,7 +23,9 @@ const navOptions: {
 
 export default function BottomNav() {
   function renderNavLinks() {
-    return navOptions.map((option) => <NavLink {...option} />);
+    return navOptions.map((option) => (
+      <NavLink key={option.text} {...option} />
+    ));
   }
   return (
     <Box

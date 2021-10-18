@@ -21,7 +21,7 @@ export function ArtistPopularSongs({ popularSongs }: AppProps) {
         <Typography sx={{ p: 2, width: "20%" }}>
           {song.hits.toLocaleString()}
         </Typography>
-        <Typography sx={{ p: 2, pr: 4, ml: "auto" }}>{song.length}</Typography>
+        <Typography sx={{ p: 2, pr: 4, ml: 2 }}>{song.length}</Typography>
       </Box>
     ));
   }

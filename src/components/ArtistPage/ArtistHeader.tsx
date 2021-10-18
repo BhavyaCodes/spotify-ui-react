@@ -42,7 +42,7 @@ export function ArtistHeader({ artistInfo }: AppProps) {
         </Box>
         <Typography
           variant="h1"
-          fontSize={downSm ? "4rem" : "6rem"}
+          fontSize={downSm ? "3rem" : "6rem"}
           fontWeight={900}
         >
           {name}
