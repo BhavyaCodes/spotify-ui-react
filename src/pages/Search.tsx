@@ -104,7 +104,8 @@ export default function Search() {
         fontSize={20}
         lineHeight="24px"
         genres={allGenres}
-        gridSizelg={2}
+        gridSizeXl={2}
+        gridSizelg={3}
         gridSizemd={4}
         gridSizesm={6}
         gridSizexs={6}
