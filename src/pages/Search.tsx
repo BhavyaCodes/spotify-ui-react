@@ -28,18 +28,18 @@ import world from "assets/genres/world.png";
 import folk from "assets/genres/folk.png";
 
 const allGenres: GenreType[] = [
-  { name: "lounge", bgColor: "#AF2896", image: lounge },
-  { name: "blues", bgColor: "#1D3164", image: blues },
-  { name: "funk", bgColor: "#27856A", image: funk },
-  { name: "retro", bgColor: "#B2B2B2", image: retro },
-  { name: "latin", bgColor: "#477D95", image: latin },
-  { name: "jazz", bgColor: "#E13300", image: jazz },
-  { name: "ambient", bgColor: "#BA5D07", image: ambient },
-  { name: "cinematic", bgColor: "#5F8109", image: cinematic },
-  { name: "fantasy", bgColor: "#1DB954", image: fantasy },
-  { name: "pop", bgColor: "#535353", image: pop },
-  { name: "world", bgColor: "#55A891", image: world },
-  { name: "folk", bgColor: "#477D95", image: folk },
+  { name: "Lounge", bgColor: "#AF2896", image: lounge },
+  { name: "Blues", bgColor: "#1D3164", image: blues },
+  { name: "Funk", bgColor: "#27856A", image: funk },
+  { name: "Retro", bgColor: "#B2B2B2", image: retro },
+  { name: "Latin", bgColor: "#477D95", image: latin },
+  { name: "Jazz", bgColor: "#E13300", image: jazz },
+  { name: "Ambient", bgColor: "#BA5D07", image: ambient },
+  { name: "Cinematic", bgColor: "#5F8109", image: cinematic },
+  { name: "Fantasy", bgColor: "#1DB954", image: fantasy },
+  { name: "Pop", bgColor: "#535353", image: pop },
+  { name: "World", bgColor: "#55A891", image: world },
+  { name: "Folk", bgColor: "#477D95", image: folk },
 ];
 
 export type Artist = {
@@ -58,8 +58,8 @@ const artists: Artist[] = [
 
 const topGenres: GenreType[] = [
   { name: "Hip Hop", bgColor: "#E6105B", image: hiphop },
-  { name: "electronic", bgColor: "#57A892", image: electronic },
-  { name: "alternative", bgColor: "#EE3AA3", image: alternative },
+  { name: "Electronic", bgColor: "#57A892", image: electronic },
+  { name: "Alternative", bgColor: "#EE3AA3", image: alternative },
 ];
 
 export default function Search() {
@@ -81,6 +81,8 @@ export default function Search() {
         Your top genres
       </Typography>
       <Genres
+        fontSize={32}
+        lineHeight="40px"
         genres={topGenres}
         gridSizelg={4}
         gridSizemd={4}
@@ -91,6 +93,8 @@ export default function Search() {
         Browse all
       </Typography>
       <Genres
+        fontSize={20}
+        lineHeight="24px"
         genres={allGenres}
         gridSizelg={2}
         gridSizemd={4}

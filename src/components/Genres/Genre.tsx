@@ -6,23 +6,40 @@ export type GenreType = {
   bgColor: string;
 };
 
-interface AppProps extends GenreType {}
+interface AppProps extends GenreType {
+  fontSize: number;
+  lineHeight: string;
+}
 
-export function Genre({ name, image, bgColor }: AppProps) {
+export function Genre({
+  name,
+  image,
+  bgColor,
+  fontSize,
+  lineHeight,
+}: AppProps) {
   return (
     <Box
       sx={{
         backgroundColor: bgColor,
         borderRadius: 1,
-        p: 1,
         height: 200,
         position: "relative",
         overflow: "hidden",
       }}
     >
       <Typography
-        sx={{ fontSize: { xs: "1.5rem", sm: "1.8rem", lg: "2rem" } }}
-        variant="h4"
+        sx={{
+          fontSize: {
+            xs: "1.5rem",
+            sm: "1.8rem",
+            lg: fontSize,
+          },
+          lineHeight: "40px",
+          fontWeight: 700,
+          mt: 1.5,
+          ml: 2,
+        }}
       >
         {name}
       </Typography>
