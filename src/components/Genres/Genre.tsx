@@ -48,7 +48,8 @@ export function Genre({
       <img
         src={image}
         style={{
-          width: "120px",
+          // width: "120px",
+          height: "60%",
           position: "absolute",
           bottom: 0,
           right: 0,
