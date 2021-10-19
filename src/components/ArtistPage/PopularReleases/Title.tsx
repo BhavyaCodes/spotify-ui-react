@@ -17,14 +17,10 @@ export function Title({ image, title }: AppProps) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        p: 2,
+        p: 1.5,
       }}
     >
-      <img
-        style={{ width: "100%", borderRadius: "4px" }}
-        src={image}
-        alt={title}
-      />
+      <img style={{ width: "100%", borderRadius: 1 }} src={image} alt={title} />
       <Typography sx={{ alignSelf: "flex-start", my: 2 }}>{title}</Typography>
     </Box>
   );

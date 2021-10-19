@@ -15,10 +15,10 @@ export default function PopularReleases({ releases }: AppProps) {
   }
   return (
     <>
-      <Typography fontSize={24} sx={{ mt: 3 }} gutterBottom>
+      <Typography fontSize={20} lineHeight="24px" sx={{ mt: 3 }} gutterBottom>
         Popular releases
       </Typography>
-      <Grid container spacing={2} mt={1}>
+      <Grid container spacing={3} mt={1.5}>
         {renderReleases()}
       </Grid>
     </>
