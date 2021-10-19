@@ -32,7 +32,7 @@ export default function Artist({
   popularReleases,
 }: AppProps) {
   return (
-    <>
+    <Box mb={3}>
       <ArtistHeader artistInfo={artistInfo} />
       <Box sx={{ backgroundColor: "#191414", pt: 2, px: 28 / 8 }}>
         <Box display="flex" alignItems="center">
@@ -75,6 +75,6 @@ export default function Artist({
         <ArtistPopularSongs popularSongs={popularSongs} />
         <PopularReleases releases={popularReleases} />
       </Box>
-    </>
+    </Box>
   );
 }
