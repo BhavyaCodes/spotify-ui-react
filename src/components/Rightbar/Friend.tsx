@@ -16,14 +16,20 @@ interface AppProps extends FriendType {}
 
 export function Friend({ name, title, artist, type, time, image }: AppProps) {
   return (
-    <Box display="flex" alignItems="center" my={2} position="relative">
-      <Box position="absolute" sx={{ right: 2, top: 2 }}>
+    <Box display="flex" alignItems="center" position="relative">
+      <Box position="absolute" sx={{ right: 3, top: 4, fontSize: 13 }}>
         {time === "now" ? (
-          <SvgIcon component={PlayingNow} viewBox="0 0 6 10" />
+          <SvgIcon
+            component={PlayingNow}
+            viewBox="0 0 6 10"
+            fontSize="inherit"
+          />
         ) : (
           <Typography
             sx={{
               // fontWeight: 100,
+              fontSize: 10,
+              lineHeight: 12 / 8,
               color: (theme) => theme.palette.text.secondary,
             }}
           >
@@ -39,20 +45,23 @@ export function Friend({ name, title, artist, type, time, image }: AppProps) {
       <Box
         display="flex"
         flexDirection="column"
-        pl={1.5}
+        pl={1}
+        py={0.5}
         sx={{ color: (theme) => theme.palette.text.secondary }}
       >
-        <Typography fontSize="16px" fontWeight={900}>
+        <Typography fontSize={12} fontWeight={700} lineHeight={12 / 8}>
           {name}
         </Typography>
-        <Typography fontSize="12px">{title}</Typography>
-        <Box display="flex" fontSize="16px">
+        <Typography fontSize={12} lineHeight={12 / 8}>
+          {title}
+        </Typography>
+        <Box display="flex" fontSize={8} alignItems="center">
           {type === "podcast" ? (
             <SvgIcon component={Podcast} fontSize="inherit" viewBox="0 0 8 8" />
           ) : (
             <SvgIcon component={Music} fontSize="inherit" viewBox="0 0 8 8" />
           )}
-          <Typography sx={{ ml: 1 }} fontSize="12px">
+          <Typography sx={{ ml: 0.5 }} fontSize={10} lineHeight={12 / 8}>
             {artist}
           </Typography>
         </Box>

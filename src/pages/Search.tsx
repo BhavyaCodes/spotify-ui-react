@@ -94,6 +94,7 @@ export default function Search() {
         gridSizemd={4}
         gridSizesm={6}
         gridSizexs={6}
+        height={162}
       />
       <Typography variant="h4" sx={{ mt: 4, mb: 2, fontSize: 32 }}>
         Browse all
@@ -106,6 +107,7 @@ export default function Search() {
         gridSizemd={4}
         gridSizesm={6}
         gridSizexs={6}
+        height={135}
       />
     </Box>
   );

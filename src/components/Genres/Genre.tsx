@@ -9,6 +9,7 @@ export type GenreType = {
 interface AppProps extends GenreType {
   fontSize: number;
   lineHeight: string;
+  height: number;
 }
 
 export function Genre({
@@ -17,13 +18,14 @@ export function Genre({
   bgColor,
   fontSize,
   lineHeight,
+  height,
 }: AppProps) {
   return (
     <Box
       sx={{
         backgroundColor: bgColor,
         borderRadius: 1,
-        height: 200,
+        height: height,
         position: "relative",
         overflow: "hidden",
       }}

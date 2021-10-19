@@ -9,6 +9,7 @@ interface AppProps {
   gridSizexs: GridSize;
   fontSize: number;
   lineHeight: string;
+  height: number;
 }
 
 export default function Genres({
@@ -19,6 +20,7 @@ export default function Genres({
   gridSizexs,
   fontSize,
   lineHeight,
+  height,
 }: AppProps) {
   function renderGenres() {
     return genres.map((genre) => (
@@ -30,7 +32,12 @@ export default function Genres({
         sm={gridSizesm}
         xs={gridSizexs}
       >
-        <Genre fontSize={fontSize} lineHeight={lineHeight} {...genre} />
+        <Genre
+          height={height}
+          fontSize={fontSize}
+          lineHeight={lineHeight}
+          {...genre}
+        />
       </Grid>
     ));
   }

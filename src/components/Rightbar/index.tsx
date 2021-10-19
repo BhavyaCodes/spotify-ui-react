@@ -145,7 +145,7 @@ export default function Rightbar() {
   }
   return (
     <Box
-      p={1.5}
+      pl={1}
       sx={{
         minHeight: "100vh",
         overflowY: "scroll",
@@ -153,9 +153,10 @@ export default function Rightbar() {
           sm: 150 / 8,
           lg: 90 / 8,
         },
+        backgroundColor: "#000",
       }}
     >
-      <Typography sx={{ fontSize: 20, fontWeight: 900 }}>
+      <Typography sx={{ mt: 2, ml: 0.5, fontSize: 14, fontWeight: 700 }}>
         Friends Activity
       </Typography>
       {renderFriends()}
