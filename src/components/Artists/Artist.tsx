@@ -16,16 +16,20 @@ export function Artist({ name, image }: ArtistProp) {
       }}
       onClick={() => history.push("/artist")}
     >
-      <Box p={2}>
+      <Box p={1.5}>
         <img
           src={image}
           alt={name}
           style={{ borderRadius: 500, width: "100%" }}
         />
       </Box>
-      <Box p={2} sx={{ alignSelf: "flex-start" }}>
-        <Typography sx={{ fontSize: 14 }}>{name}</Typography>
-        <Typography sx={{ fontSize: 12, opacity: 0.5 }}>Artist</Typography>
+      <Box px={1.5} pb={2} sx={{ alignSelf: "flex-start" }}>
+        <Typography sx={{ fontSize: 14, fontWeight: 700, lineHeight: 2 }}>
+          {name}
+        </Typography>
+        <Typography sx={{ fontSize: 12, color: "#B2B2B2", lineHeight: 14 / 8 }}>
+          Artist
+        </Typography>
       </Box>
     </Box>
   );

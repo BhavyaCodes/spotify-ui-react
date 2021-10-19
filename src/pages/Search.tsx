@@ -67,10 +67,13 @@ export default function Search() {
     <Box
       sx={{
         backgroundColor: "#191414",
-        p: 3,
+        pt: 2,
+        px: 28 / 8,
       }}
     >
-      <Typography variant="h4" sx={{ mt: 4, mb: 2 }}>
+      <Typography
+        sx={{ mt: 4, mb: 2, fontSize: 32, fontWeight: 700, lineHeight: "40px" }}
+      >
         Recent searches
       </Typography>
       <Artists artists={artists} />
