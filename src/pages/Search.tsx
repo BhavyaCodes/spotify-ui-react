@@ -72,12 +72,18 @@ export default function Search() {
       }}
     >
       <Typography
-        sx={{ mt: 4, mb: 2, fontSize: 32, fontWeight: 700, lineHeight: "40px" }}
+        sx={{
+          mt: 4,
+          mb: 1.5,
+          fontSize: 32,
+          fontWeight: 700,
+          lineHeight: "40px",
+        }}
       >
         Recent searches
       </Typography>
       <Artists artists={artists} />
-      <Typography variant="h4" sx={{ mt: 4, mb: 2 }}>
+      <Typography variant="h4" sx={{ mt: 4, mb: 2, fontSize: 32 }}>
         Your top genres
       </Typography>
       <Genres
@@ -89,7 +95,7 @@ export default function Search() {
         gridSizesm={6}
         gridSizexs={6}
       />
-      <Typography variant="h4" sx={{ mt: 4, mb: 2 }}>
+      <Typography variant="h4" sx={{ mt: 4, mb: 2, fontSize: 32 }}>
         Browse all
       </Typography>
       <Genres
