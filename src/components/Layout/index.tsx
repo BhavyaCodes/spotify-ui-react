@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <CssBaseline />
       <Box
         component="nav"
-        sx={{ width: { lg: drawerWidth }, flexShrink: { lg: 0 } }}
+        sx={{ width: { lg: drawerWidth }, flexShrink: { lg: 1 } }}
         aria-label="mailbox folders"
       >
         <Drawer
@@ -60,7 +60,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         sx={{
           flexGrow: 0,
           // p: 0,
-          width: { xl: `calc(100% - ${2 * drawerWidth}px)` },
+          width: { lg: `calc(100% - ${2 * drawerWidth}px)` },
           // width: { sm: `calc(100% - ${drawerWidth}px)` },
           // pb: "3rem",
           maxHeight: "100vh",
