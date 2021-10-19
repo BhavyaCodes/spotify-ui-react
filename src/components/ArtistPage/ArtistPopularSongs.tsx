@@ -13,23 +13,50 @@ export function ArtistPopularSongs({ popularSongs }: AppProps) {
         key={song.title}
         display="flex"
         alignItems="center"
+        mb={1.5}
 
         // justifyContent="space-between"
       >
-        <Box mr={2}>{i + 1}</Box>
-        <img height="50px" width="50px" src={song.image} alt={song.title} />
-        <Typography sx={{ p: 2, width: "40%" }}>{song.title}</Typography>
-        <Typography sx={{ p: 2, width: "20%" }}>
+        <Box width={16}>
+          <Typography fontSize={14} lineHeight="16px" mr={1} color="#B2B2B2">
+            {i + 1}
+          </Typography>
+        </Box>
+        <img height="48px" width="48px" src={song.image} alt={song.title} />
+        <Typography sx={{ ml: 1, width: "40%" }}>{song.title}</Typography>
+        <Typography
+          sx={{
+            p: 2,
+            width: "20%",
+            color: "#B2B2B2",
+            fontSize: 14,
+            lineHeight: "14px",
+            flexGrow: 3,
+          }}
+        >
           {song.hits.toLocaleString()}
         </Typography>
-        <Typography sx={{ p: 2, pr: 1, ml: 2 }}>{song.length}</Typography>
+        <Typography
+          sx={{
+            p: 2,
+            pr: 1,
+            ml: 2,
+            color: "#B2B2B2",
+            fontSize: 14,
+            lineHeight: "14px",
+            flexShrink: 1,
+            flexGrow: 2,
+          }}
+        >
+          {song.length}
+        </Typography>
       </Box>
     ));
   }
   return (
     <Box mt={3}>
       <Grid container spacing={0}>
-        <Grid item lg={8}>
+        <Grid item lg={7}>
           <Typography fontSize={20} lineHeight="24px" sx={{ mb: 1.5 }}>
             Popular
           </Typography>
@@ -38,7 +65,7 @@ export function ArtistPopularSongs({ popularSongs }: AppProps) {
             SEE MORE
           </Typography>
         </Grid>
-        <Grid item lg={4}>
+        <Grid item lg={5}>
           <Typography fontSize={24} gutterBottom>
             Liked Songs
           </Typography>
