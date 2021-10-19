@@ -32,10 +32,19 @@ export function NavLink({
       onClick={() => history.push(path)}
       sx={{
         transition: "all .2s ease-out",
+        color: "inherit",
+        p: 0,
+        font: "inherit",
         "&:hover": {
           color: "#fff",
         },
+        background: "inherit",
+        border: "none",
+        cursor: "pointer",
+        outline: "inherit",
       }}
+      component="button"
+      type="button"
     >
       <SvgIcon viewBox={viewBox} component={icon} />
       <Typography>{text}</Typography>

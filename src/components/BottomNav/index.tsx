@@ -31,6 +31,7 @@ export default function BottomNav() {
     <Box
       height={60}
       p={1}
+      component="nav"
       sx={{
         position: "fixed",
         width: "100%",
