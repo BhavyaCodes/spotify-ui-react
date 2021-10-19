@@ -21,7 +21,7 @@ export function Middle() {
       <Box
         display="flex"
         fontSize={14}
-        width={200}
+        width={140}
         justifyContent="space-between"
         alignItems="center"
       >
@@ -43,7 +43,7 @@ export function Middle() {
             "&:hover path": {
               fill: "#fff",
             },
-            fontSize: "inherit",
+            fontSize: "11px",
           }}
           viewBox="0 0 10 11"
         />
@@ -54,18 +54,18 @@ export function Middle() {
             justifyContent: "center",
             alignItems: "center",
             borderRadius: 500,
-            width: 33,
-            height: 33,
-            "&:hover": {
-              width: 35,
-              height: 35,
-            },
+            width: 28,
+            height: 28,
+            // "&:hover": {
+            //   width: 35,
+            //   height: 35,
+            // },
           }}
         >
           <SvgIcon
             component={Play}
             sx={{
-              fontSize: "inherit",
+              fontSize: "12px",
               pl: 0.25,
             }}
             viewBox="0 0 10 12"
