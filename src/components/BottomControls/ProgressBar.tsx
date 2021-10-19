@@ -11,14 +11,21 @@ export function ProgressBar() {
           xs: "100%",
           sm: "120%",
           md: "150%",
-          lg: "600px",
+          lg: "559px",
         },
       }}
       display="flex"
+      alignItems="center"
     >
       <Typography
-        sx={{ position: "relative", top: 5, mr: 2, opacity: 0.5 }}
-        fontSize={14}
+        sx={{
+          position: "relative",
+          top: 2,
+          mr: 1,
+          color: (theme) => theme.palette.text.secondary,
+        }}
+        fontSize={10}
+        lineHeight="12px"
       >
         1:43
       </Typography>
@@ -26,11 +33,12 @@ export function ProgressBar() {
       <Typography
         sx={{
           position: "relative",
-          top: 5,
-          ml: 2,
-          opacity: 0.5,
+          top: 2,
+          ml: 1,
+          color: (theme) => theme.palette.text.secondary,
         }}
-        fontSize={14}
+        fontSize={10}
+        lineHeight="12px"
       >
         4:00
       </Typography>
