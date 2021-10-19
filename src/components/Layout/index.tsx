@@ -73,7 +73,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           // },
           pb: {
             sm: 150 / 8,
-            lg: 90 / 8,
+            lg: 10,
           },
         }}
       >
