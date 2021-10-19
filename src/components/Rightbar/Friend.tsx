@@ -55,11 +55,26 @@ export function Friend({ name, title, artist, type, time, image }: AppProps) {
         <Typography fontSize={12} lineHeight={12 / 8}>
           {title}
         </Typography>
-        <Box display="flex" fontSize={8} alignItems="center">
+        <Box
+          display="flex"
+          fontSize={8}
+          alignItems="center"
+          position="relative"
+        >
           {type === "podcast" ? (
-            <SvgIcon component={Podcast} fontSize="inherit" viewBox="0 0 8 8" />
+            <SvgIcon
+              component={Podcast}
+              fontSize="inherit"
+              viewBox="0 0 8 8"
+              sx={{ position: "relative", bottom: 1 }}
+            />
           ) : (
-            <SvgIcon component={Music} fontSize="inherit" viewBox="0 0 8 8" />
+            <SvgIcon
+              component={Music}
+              fontSize="inherit"
+              sx={{ position: "relative", bottom: 1 }}
+              viewBox="0 0 8 8"
+            />
           )}
           <Typography sx={{ ml: 0.5 }} fontSize={10} lineHeight={12 / 8}>
             {artist}
