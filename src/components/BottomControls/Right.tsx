@@ -8,7 +8,7 @@ import { Slider } from "components/common/Slider";
 export function Right() {
   return (
     <Box
-      p={2}
+      p={0}
       alignItems="center"
       sx={{
         display: {
@@ -21,7 +21,6 @@ export function Right() {
         component={Queue}
         viewBox="0 0 16 16"
         sx={{
-          mx: 1,
           fontSize: 16,
           "&:hover path": {
             fill: (theme) => theme.palette.primary.main,
@@ -43,22 +42,21 @@ export function Right() {
         component={Volume}
         viewBox="0 0 12 11"
         sx={{
-          mx: 1,
           fontSize: 16,
           "&:hover path": {
             fill: (theme) => theme.palette.primary.main,
           },
         }}
       />
-      <Box width={100} mx={1}>
+      <Box width={72} mr={9.75 / 8} ml={1}>
         <Slider />
       </Box>
       <SvgIcon
         component={Enlarge}
         viewBox="0 0 11 11"
         sx={{
-          mx: 1,
-          fontSize: 16,
+          mr: 1.5,
+          fontSize: 10,
           "&:hover path": {
             fill: (theme) => theme.palette.primary.main,
           },

@@ -16,7 +16,7 @@ export default function BottomControls() {
         left: 0,
         right: 0,
         zIndex: 10000,
-        height: 90,
+        height: 80,
         // height: "3rem",
       }}
     >
