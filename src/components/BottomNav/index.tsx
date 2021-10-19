@@ -32,7 +32,7 @@ export default function BottomNav() {
       height={60}
       p={1}
       sx={{
-        position: "absolute",
+        position: "fixed",
         width: "100%",
         display: { xs: "flex", lg: "none" },
         justifyContent: "space-around",

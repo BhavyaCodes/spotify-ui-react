@@ -25,6 +25,7 @@ export default function BottomControls() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          position: "relative",
         }}
       >
         <Left />

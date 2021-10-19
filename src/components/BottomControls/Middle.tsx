@@ -16,7 +16,13 @@ export function Middle() {
       flexDirection="column"
       alignItems="center"
       justifyContent="center"
-      sx={{ mr: 2 }}
+      sx={{
+        mr: 2,
+        left: { md: "50%", xs: "auto" },
+        right: { md: "auto", xs: "0" },
+        transform: "translateX(-50%)",
+      }}
+      position="absolute"
     >
       <Box
         display="flex"
