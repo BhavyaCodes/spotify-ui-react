@@ -9,14 +9,7 @@ interface AppProps {
 export function ArtistPopularSongs({ popularSongs }: AppProps) {
   function renderSongs() {
     return popularSongs.map((song, i) => (
-      <Box
-        key={song.title}
-        display="flex"
-        alignItems="center"
-        mb={1.5}
-
-        // justifyContent="space-between"
-      >
+      <Box key={song.title} display="flex" alignItems="center" mb={1.5}>
         <Box width={16}>
           <Typography fontSize={14} lineHeight="16px" mr={1} color="#B2B2B2">
             {i + 1}
@@ -61,32 +54,41 @@ export function ArtistPopularSongs({ popularSongs }: AppProps) {
             Popular
           </Typography>
           {renderSongs()}
-          <Typography sx={{ mt: 2 }} fontSize={12} gutterBottom>
+          <Typography sx={{ mt: 1.5 }} fontSize={10}>
             SEE MORE
           </Typography>
         </Grid>
         <Grid item lg={5}>
-          <Typography fontSize={24} gutterBottom>
+          <Typography fontSize={20} lineHeight="24px">
             Liked Songs
           </Typography>
-          <Box display="flex" alignItems="center">
-            <Box position="relative">
+          <Box display="flex" mt={1.5} alignItems="center">
+            <Box position="relative" fontSize={24}>
               <img
                 src={popularSongs[0].image}
-                width="80px"
+                width="64px"
+                height="64px"
                 alt={popularSongs[0].title}
                 style={{ borderRadius: 500 }}
               />
               <SvgIcon
+                fontSize="inherit"
                 viewBox="0 0 24 24"
                 component={HeartSolid}
                 style={{ position: "absolute", bottom: "10%", right: "2%" }}
               />
             </Box>
-            <Box pl={1.5}>
-              <Typography fontSize={20}>You've liked 4 songs</Typography>
+            <Box ml={1}>
+              <Typography fontSize={20} lineHeight="24px">
+                You've liked 4 songs
+              </Typography>
               <Typography
-                sx={{ color: (theme) => theme.palette.grey[600], fontSize: 10 }}
+                sx={{
+                  color: (theme) => theme.palette.grey[600],
+                  fontSize: 10,
+                  lineHeight: "12px",
+                  mt: 0.5,
+                }}
               >
                 By Ronaldo
               </Typography>
