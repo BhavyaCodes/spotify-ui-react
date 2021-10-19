@@ -10,6 +10,7 @@ export function TopNav() {
       sx={{
         display: "flex",
         alignItems: "center",
+        justifyContent: "center",
         mt: -1.5,
         backgroundColor: "rgba(0,0,0,0)",
         position: "absolute",
@@ -17,7 +18,7 @@ export function TopNav() {
         px: {
           xs: 1,
           sm: 1.5,
-          md: 2,
+          md: 28 / 8,
         },
         pt: 2.5,
         // p: (theme) => (theme.breakpoints.down("sm") ? 10 : 1),
@@ -29,22 +30,27 @@ export function TopNav() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          p: {
-            xs: 1,
-            sm: 1.5,
-          },
+          // p: {
+          //   xs: 1,
+          //   sm: 1.5,
+          // },
+          mr: 1.5,
+          width: 16,
+          height: 16,
           borderRadius: "50%",
-          fontSize: 15,
+          fontSize: 4,
           fontWeight: 900,
           strokeWidth: 200,
-          mr: (theme) => theme.spacing(2),
+          // mr: (theme) => theme.spacing(2),
         }}
       >
         <SvgIcon
           component={leftArrow}
           viewBox="0 0 5 8"
           fontSize="inherit"
-          sx={{ position: "relative", right: 1 }}
+          sx={{ position: "relative", right: 1, height: 8 }}
+          // width={5}
+          // height={8}
         />
       </Box>
       <Box
@@ -53,12 +59,14 @@ export function TopNav() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          p: {
-            xs: 1,
-            sm: 1.5,
-          },
+          // p: {
+          //   xs: 1,
+          //   sm: 1.5,
+          // },
+          width: 16,
+          height: 16,
           borderRadius: "50%",
-          fontSize: 15,
+          fontSize: 4,
           fontWeight: 900,
           strokeWidth: 200,
         }}
@@ -67,7 +75,11 @@ export function TopNav() {
           component={rightArrow}
           viewBox="0 0 5 8"
           fontSize="inherit"
-          sx={{ position: "relative", left: 1 }}
+          sx={{
+            position: "relative",
+            left: 1,
+            height: 8,
+          }}
         />
       </Box>
       <SearchBar sx={{ ml: { xs: 1, sm: 1.5, md: 3 } }} />
