@@ -20,7 +20,7 @@ export function Middle() {
         mr: 2,
         left: { md: "50%", xs: "auto" },
         right: { md: "auto", xs: "0" },
-        transform: "translateX(-50%)",
+        transform: { md: "translateX(-50%)", xs: "translateX(0%)" },
       }}
       position="absolute"
     >
