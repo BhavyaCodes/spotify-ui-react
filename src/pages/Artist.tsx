@@ -34,7 +34,7 @@ export default function Artist({
   return (
     <>
       <ArtistHeader artistInfo={artistInfo} />
-      <Box sx={{ backgroundColor: "#191414", p: 3 }}>
+      <Box sx={{ backgroundColor: "#191414", pt: 2, px: 28 / 8 }}>
         <Box display="flex" alignItems="center">
           <Box
             p={2}
@@ -44,19 +44,28 @@ export default function Artist({
             }}
             component="span"
             display="flex"
-            width={60}
-            height={60}
+            width={56}
+            height={56}
             justifyContent="center"
             alignItems="center"
+            fontSize={21}
           >
             <SvgIcon
+              fontSize="inherit"
               component={PlayIcon}
               sx={{ ml: 0.5 }}
               viewBox="0 0 19 22"
             />
           </Box>
           <Button
-            sx={{ display: "inline", px: 4, mx: 4 }}
+            sx={{
+              display: "inline",
+              px: 3,
+              ml: 3,
+              py: 1,
+              fontSize: 10,
+              lineHeight: "12px",
+            }}
             variant="outlined"
             color="secondary"
           >
