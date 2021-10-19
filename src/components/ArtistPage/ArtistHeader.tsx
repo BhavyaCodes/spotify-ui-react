@@ -21,7 +21,10 @@ export function ArtistHeader({ artistInfo }: AppProps) {
   return (
     <Box
       sx={{
-        background: "rgba(83, 83, 83, 1)",
+        // background: "rgba(83, 83, 83, 1)",
+        background:
+          "linear-gradient(180deg, rgba(178, 178, 178, 1) -48.79%, #191414 108.47%)",
+
         pl: 28 / 8,
         pt: 108 / 8,
         display: "flex",
