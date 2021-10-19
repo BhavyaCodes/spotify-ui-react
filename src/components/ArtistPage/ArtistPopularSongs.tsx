@@ -13,6 +13,7 @@ export function ArtistPopularSongs({ popularSongs }: AppProps) {
         key={song.title}
         display="flex"
         alignItems="center"
+
         // justifyContent="space-between"
       >
         <Box mr={2}>{i + 1}</Box>
@@ -29,7 +30,7 @@ export function ArtistPopularSongs({ popularSongs }: AppProps) {
     <Box mt={3}>
       <Grid container spacing={0}>
         <Grid item lg={8}>
-          <Typography fontSize={24} gutterBottom>
+          <Typography fontSize={20} lineHeight="24px" sx={{ mb: 1.5 }}>
             Popular
           </Typography>
           {renderSongs()}
