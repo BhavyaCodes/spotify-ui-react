@@ -69,6 +69,7 @@ export default function Search() {
         backgroundColor: "#191414",
         pt: 2,
         px: 28 / 8,
+        mb: 3,
       }}
     >
       <Typography

@@ -22,32 +22,42 @@ export function ArtistHeader({ artistInfo }: AppProps) {
     <Box
       sx={{
         background: "rgba(83, 83, 83, 1)",
-        p: 3,
-        pt: 9,
+        pl: 28 / 8,
+        pt: 108 / 8,
         display: "flex",
         alignItems: "center",
+        pb: 4,
       }}
     >
       <img
         src={image}
-        style={{ borderRadius: "500px", width: downSm ? "150px" : "200px" }}
+        style={{ borderRadius: "500px", width: downSm ? "150px" : "160px" }}
         alt={name}
       />
-      <Box pl={3}>
-        <Box display="flex">
-          {verified && <SvgIcon component={Verified} viewBox="0 0 16 16" />}
-          <Typography sx={{ ml: 1 }}>
+      <Box pl={2}>
+        <Box display="flex" fontSize={12} alignItems="center">
+          {verified && (
+            <SvgIcon
+              component={Verified}
+              fontSize="inherit"
+              viewBox="0 0 16 16"
+            />
+          )}
+          <Typography sx={{ ml: 0.5, fontSize: 12, lineHeight: "14px" }}>
             {verified && "Verified Artist"}
           </Typography>
         </Box>
         <Typography
           variant="h1"
-          fontSize={downSm ? "3rem" : "6rem"}
-          fontWeight={900}
+          fontSize={downSm ? "3rem" : 80}
+          lineHeight="96px"
+          fontWeight={700}
         >
           {name}
         </Typography>
-        <Typography>{`${listeners.toLocaleString()} monthly listeners`}</Typography>
+        <Typography
+          sx={{ pt: 0.5, fontSize: 12, lineHeight: "14px" }}
+        >{`${listeners.toLocaleString()} monthly listeners`}</Typography>
       </Box>
     </Box>
   );
