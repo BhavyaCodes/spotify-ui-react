@@ -151,8 +151,12 @@ export default function Rightbar() {
         overflowY: "scroll",
         pb: {
           sm: 150 / 8,
-          lg: 90 / 8,
+          lg: 13,
         },
+        // mb: {
+        //   sm: 150 / 8,
+        //   lg: 7,
+        // },
         backgroundColor: "#000",
       }}
     >

@@ -13,9 +13,9 @@ export default function LeftBar() {
   return (
     <Box
       sx={{
-        pb: {
+        mb: {
           sm: 150 / 8,
-          lg: 90 / 8,
+          lg: 7,
         },
         px: 1,
         pt: 2,
